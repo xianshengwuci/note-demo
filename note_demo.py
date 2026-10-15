@@ -51,5 +51,5 @@ gr.Interface(
     inputs=gr.Textbox(label="输入笔记（每条一行）", lines=8),
     outputs=gr.Textbox(label="整理结果", lines=12),
     title="我的笔记分类小工具",
-    description="用“已完成：”“待确认：”“下一步：”作为每条笔记的开头。",
+    description="每行以“已完成/完成”“待确认/疑问”或“下一步/待办”开头，中文冒号和英文冒号都支持。",
 ).launch(inbrowser=True, share=False)
